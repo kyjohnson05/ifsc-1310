@@ -1,0 +1,324 @@
+/* ---- CSS Demo ---- */
+
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /*  --------------- Responsive Images -----------------  */
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /*  --------------- Utility Classes -----------------  */
+  
+  .container {
+    max-width: 960px;
+    width: 80vw;
+    margin: 40px auto;
+  }
+  
+  .img-right {
+    float: right;
+    margin: 10px 0 10px 20px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    border-radius: 50px;
+  }
+  
+  .img-left {
+    float: left;
+    margin: 10px 20px 10px 0;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    border-radius: 50px;
+  }
+  
+  .img-center {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    border-radius: 50px;
+  }
+  
+  /*  --------------- Global Styles -----------------  */
+  
+  body {
+    font-family: "Gabarito", sans-serif;
+    margin: 0;
+  }
+  
+  /* Background Example 
+  background: no-repeat center/50% url("../img/kitten.webp");
+  */
+  
+  header.primary {
+    background-color: #3b638b;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='16' viewBox='0 0 20 16'%3E%3Cg fill='%23172635' fill-opacity='0.2'%3E%3Cpath fill-rule='evenodd' d='M0 .04C2.6.22 4.99 1.1 7 2.5A13.94 13.94 0 0 1 15 0h4c.34 0 .67.01 1 .04v2A12 12 0 0 0 7.17 12h5.12A7 7 0 0 1 20 7.07V14a5 5 0 0 0-3-4.58A5 5 0 0 0 14 14H0V7.07c.86.12 1.67.4 2.4.81.75-1.52 1.76-2.9 2.98-4.05C3.79 2.83 1.96 2.2 0 2.04v-2z'/%3E%3C/g%3E%3C/svg%3E");
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    /*long form*/
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    /*Single value short hand*/
+    padding: 40px;
+    /* T,R,B,L */
+    padding: 20px 40px 20px 40px;
+    /* Two Value Top/Bottom / L/R */
+    padding: 20px 40px;
+  }
+  
+  header.primary h1 {
+    font-size: 2.4rem;
+    margin: 20px 0 0;
+  }
+  
+  header.primary h1 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  header.primary h2 {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  
+  header.primary nav {
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  header.primary ul {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  header.primary ul li {
+    list-style-type: none;
+  }
+  
+  header.primary nav a {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 7.5px 10px;
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    transition: 0.4s;
+  }
+  
+  header.primary nav a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  #content {
+    line-height: 1.5;
+  }
+  
+  #content h2 {
+    color: #3b638b;
+    border-bottom: 1px dotted #c0c0c0;
+  }
+  
+  #content h3 {
+    border-left: 7.5px solid #3b638b;
+    padding: 7.5px;
+  }
+  
+  #blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    border-bottom: 1px dotted #c0c0c0;
+    padding: 2rem 0;
+    border-top: 1px dotted #c0c0c0;
+    flex-wrap: wrap;
+  }
+  
+  #blog h2 {
+    flex: 0 0 100%;
+    margin: 0;
+    text-align: center;
+  }
+  
+  #blog .post {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    transition: 0.5s;
+    flex: 1;
+  }
+  
+  #blog figure {
+    margin: 0;
+  }
+  
+  #blog figcaption {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    text-align: center;
+    color: #c0c0c0;
+  }
+  
+  #blog header {
+    padding-top: 10px;
+    font-size: 0.6rem;
+    color: #c0c0c0;
+  }
+  
+  #blog header h2 {
+    margin: 0;
+  }
+  
+  #blog a {
+    color: #3b638b;
+  }
+  
+  #blog .post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  #practice h2 {
+    color: #3b638b;
+    border-bottom: 1px solid #c0c0c0;
+  }
+  
+  table {
+    border: 1px solid #c0c0c0;
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+  }
+  caption {
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  th {
+    background-color: #172635;
+    color: #ffffff;
+    padding: 7.5px;
+  }
+  tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  tr:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  td:nth-child(2),
+  td:nth-child(3) {
+  }
+  
+  td:nth-child(n + 2) {
+    text-align: right;
+  }
+  
+  td {
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+  }
+  
+  #practice ol {
+    list-style-type: lower-decimal;
+  }
+  
+  #practice ul ul {
+    list-style-type: square;
+  }
+  
+  dl dt {
+    font-weight: bold;
+  }
+  
+  dl dd {
+    margin: 0;
+  }
+  
+  dd + dt {
+    margin-top: 1rem;
+  }
+  
+  #practice blockquote {
+    border: 4px double #c0c0c0;
+    padding: 20px 40px;
+    margin: 40px 80px;
+    border-radius: 30px 0;
+    background-color: #3b638b;
+    color: #ffffff;
+    line-height: 1.4;
+    text-shadow: 1px 1px #000;
+  }
+  
+  #practice blockquote cite {
+    display: block;
+    text-align: right;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+  }
+  
+  aside[role="complementary"] {
+    background-color: #172635;
+    color: #ffffff;
+    padding: 1.25rem;
+  }
+  
+  aside .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+  }
+  
+  aside .container a {
+    color: #fff;
+  }
+  
+  aside .container a:last-of-type {
+    display: block;
+  
+    text-align: right;
+    margin-top: 1rem;
+  }
+  
+  aside .widget footer {
+    display: none;
+  }
+  
+  #colophon {
+    background-color: #3b638b;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='16' viewBox='0 0 20 16'%3E%3Cg fill='%23172635' fill-opacity='0.2'%3E%3Cpath fill-rule='evenodd' d='M0 .04C2.6.22 4.99 1.1 7 2.5A13.94 13.94 0 0 1 15 0h4c.34 0 .67.01 1 .04v2A12 12 0 0 0 7.17 12h5.12A7 7 0 0 1 20 7.07V14a5 5 0 0 0-3-4.58A5 5 0 0 0 14 14H0V7.07c.86.12 1.67.4 2.4.81.75-1.52 1.76-2.9 2.98-4.05C3.79 2.83 1.96 2.2 0 2.04v-2z'/%3E%3C/g%3E%3C/svg%3E");
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1.1rem;
+  }
+  
+  @media screen and (max-width: 600px) {
+    header.primary ul {
+      flex-direction: column;
+      gap: 10px;
+      max-width: 250px;
+      margin: auto;
+    }
+    header.primary nav a {
+      display: block;
+    }
+  }
+  
