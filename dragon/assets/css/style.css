@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-text {
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+}
+
+body {
+    font-family: "Electrolize", sans-serif; 
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header/Navbar */
+.main-header {
+    background: rgba(0, 0, 0, 0.502);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    height: 100px;
+    padding: 0 30px;
+}
+
+.main-header h6 {
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 8px;
+    margin-top: 5px;
+    width: 300px;
+}
+
+/* NASA Logo */
+.outside-link {
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+}
+
+.nasa-logo {
+    width: 100px;
+    position: fixed;
+    right: 25px;
+    bottom: 50px;
+}
+
+.nasa-logo img {
+    display: block;
+    width: 100%;
+    height: auto; 
+}
+
+/* Logo */
+.logo {
+    width: 210px;
+    height: auto;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop Menu */
+.desktop-main-menu ul {
+    display: flex;
+}
+
+.desktop-main-menu ul li {
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 2px;
+}
+
+/* Menu Item Bottom Border */
+.desktop-main-menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: white;
+    transform: scaleX(0);
+    transition: transform 0.6s cubic-bezier(0.19,1,0.22,1);
+    transform-origin: right center;
+}
+
+.desktop-main-menu ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+    transition-duration: 0.4s;
+}
+
+/* Sections */
+section {
+    position: relative;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+}
+
+.section-inner {
+    position: absolute;
+    bottom: 200px;
+    left: 150px;
+    max-height: 560px;
+    width: 50%;
+    font-size: x-large;
+}
+
+.section-centered {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-inner h4 {
+    font-family: "Share Tech", sans-serif;
+}
+
+.section-inner h3 {
+    font-family: "Oxanium", sans-serif;
+}
+
+.section-inner h2 {
+    font-family: "Dhurjati", sans-serif;
+}
+
+.section-centered h4 {
+    font-family: "Share Tech", sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.section-centered h3 {
+    font-family: "Oxanium", sans-serif;
+}
+
+.section-centered h2 {
+    font-family: "Dhurjati", sans-serif;
+}
+
+.section-a h2 {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.section-b h2 {
+    font-size: 100px;
+    color: #ffffff;
+    margin: 0 125px;
+}
+
+.section-i h2 {
+    font-size: 100px;
+    color: #ffffff;
+    margin: 50px 125px;
+}
+
+/* Background Images */
+.section-a {
+    background-image: url('../img/dragoncrew.8k.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.section-b {
+    background-image: url('../img/1920x1080-hd-space-gq0s9dv5gwk75txg.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.section-c {
+    background-image: url('../img/dragon-capsule-5.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.section-d {
+    background-image: url('../img/dragon-in-space.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.section-e {
+    background-image: url('../img/dragon-intertior-cargo.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.section-f {
+    background-image: url('../img/SpaceX_Dragon_2_Pad_Abort_Test_Infographic.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.section-g {
+    background-image: url('../img/Dragon_2_hover_test.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.section-h {
+    background-image: url('../img/launch.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.section-i {
+    background-image: url('../img/Dragon_V2_interior.2.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.img {
+    background-image: url('https://wallpapers.com/images/featured/black-galaxy-background-mdp0rqi0ijqvfby2.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+/* Table */
+
+table {
+    border: 1px solid #c0c0c0;
+    background-color: rgb(62, 62, 62);
+    width: 100%;
+    margin: -50px 0;
+    border-collapse: collapse;
+  }
+  
+  th {
+    background-color: #020202;
+    color: #ffffff;
+    padding: 7.5px;
+  }
+  tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  td {
+    border: 1px solid #ffffff;
+    padding: 5px;
+  }
+
+/* Questions */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 75%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.wrapper > h2 {
+    margin: 3rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Orbitron", sans-serif;
+}
+
+.accordion {
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.accordion i {
+    font-size: 1.6rem;
+}
+
+.active, .accordion:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+}
+
+.accordion h3 {
+    font-family: "Oxanium", sans-serif;
+    text-align: left;
+}
+
+.pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    overflow: hidden;
+    display: none;
+    background-color: #ffffff;
+    color: #000000;
+    text-shadow: none;
+}
+
+.pannel h4 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+.faq {
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.faq.active {
+    border: none;
+}
+
+/* Footer */
+
+aside .widget footer {
+    display: none;
+  }
+  
+  #colophon {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
