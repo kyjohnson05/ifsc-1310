@@ -130,9 +130,10 @@ section {
     position: absolute;
     bottom: 200px;
     left: 150px;
-    max-height: 560px;
-    width: 50%;
-    font-size: x-large;
+    max-height: 50%;
+    width: 75%;
+    line-height: 30px;
+    max-inline-size: 65%;
 }
 
 .section-centered {
@@ -140,6 +141,9 @@ section {
     text-align: center;
     top: 50%;
     left: 50%;
+    max-height: 50%;
+    line-height: 100%;
+    width: 75%;
     transform: translate(-50%, -50%);
 }
 
@@ -149,10 +153,12 @@ section {
 
 .section-inner h3 {
     font-family: "Oxanium", sans-serif;
+    margin: 25px auto;
 }
 
 .section-inner h2 {
     font-family: "Dhurjati", sans-serif;
+    margin: 25px auto;
 }
 
 .section-centered h4 {
@@ -183,7 +189,10 @@ section {
 .section-i h2 {
     font-size: 100px;
     color: #ffffff;
-    margin: 50px 125px;
+    margin: 50px auto;
+    line-height: 50%;
+    width: 100%;
+    min-width: max-content;
 }
 
 /* Background Images */
@@ -312,8 +321,10 @@ section {
 table {
     border: 1px solid #c0c0c0;
     background-color: rgb(62, 62, 62);
+    margin: 50px auto;
+    line-height: 100%;
     width: 100%;
-    margin: -50px 0;
+    min-width: max-content;
     border-collapse: collapse;
   }
   
