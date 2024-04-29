@@ -151,6 +151,42 @@ header.secondary nav a:hover {
     min-width: max-content;
   }
 
+  /* Header Quad */
+  header.quad h2 {
+    position: relative;
+    font-size: 1.5rem;
+  }
+  
+  header.quad nav {
+    margin: 30px auto;
+  }
+  
+  header.quad ul {
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  header.quad li {
+    list-style-type: none;
+  }
+  
+  header.quad nav a {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 7px 10px;
+    border-radius: 2px;
+    border: 1px solid #ff0000;
+    transition: 0.4s;
+  }
+  
+  header.quad nav a:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.2s;
+  }
+
   .revision {
     margin: 50px auto;
     line-height: 250%;
