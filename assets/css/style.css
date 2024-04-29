@@ -11,9 +11,6 @@ text-transform: uppercase;
 text-shadow: 2px 2px #000000;
 font-family: "Iceland", static;
 position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
 width: 95%;
 }
 
@@ -148,6 +145,13 @@ header.secondary nav a:hover {
   }
 
   .question {
+    margin: 50px auto;
+    line-height: 250%;
+    width: 70%;
+    min-width: max-content;
+  }
+
+  .revision {
     margin: 50px auto;
     line-height: 250%;
     width: 70%;
